@@ -1,0 +1,120 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+:root {
+  /* Colors */
+  --color-bg: #faf7f2; /* page background */
+  --color-text: #2b2620; /* main text color */
+  --color-dark: #2b2620; /* header background */
+  --color-light: #faf7f2; /* text on dark backgrounds */
+  --color-accent: #7a5c3e; /* headings, buttons */
+  --color-accent-hover: #5e4530; /* button on hover */
+  --color-muted: #c9bfa9; /* subtle borders/text */
+  --color-footer-text: #8a8272;
+
+  /* Typography */
+  --font-main: Georgia, "Times New Roman", serif;
+  --font-size-heading: 2rem;
+  --font-size-small: 0.9rem;
+
+  /* Spacing */
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+
+  /* Layout */
+  --max-content-width: 640px;
+  --radius: 6px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+}
+
+.header {
+  background-color: var(--color-dark);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  gap: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: var(--color-light);
+  font-style: var(--font-size-heading);
+}
+
+.header p {
+  color: var(--color-muted);
+}
+
+.hero {
+  padding: 2rem;
+}
+
+.first-hero {
+  margin-bottom: 1.75rem;
+}
+
+.hero-header {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: var(--font-size-heading);
+  margin-bottom: 20px;
+}
+
+.divider {
+  color: var(--color-accent);
+  border-width: 2px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero-para {
+  color: var(--color-dark);
+}
+
+.hero-list {
+  margin-left: 40px;
+}
+
+.hero-list li {
+  color: var(--color-dark);
+  margin-bottom: 0.75rem;
+}
+
+.btn {
+  margin-top: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--font-main);
+}
+
+.btn:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: var(--color-footer-text);
+  margin-bottom: 2rem;
+}
